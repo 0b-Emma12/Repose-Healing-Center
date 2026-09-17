@@ -33,4 +33,52 @@ class PageController extends Controller
     {
         return view('careers');
     }
+
+    public function showCondition($slug)
+    {
+        $data = config("repose.conditions.{$slug}");
+        abort_if(!$data, 404);
+
+        $sidebarLinks = collect(config('repose.conditions'))->map(function($item, $key) {
+            return ['title' => $item['title'], 'url' => route('conditions.show', $key)];
+        });
+
+        return view('templates.content-page', [
+            'data' => $data,
+            'sidebarTitle' => 'Conditions We Treat',
+            'sidebarLinks' => $sidebarLinks
+        ]);
+    }
+
+    public function showProgramme($slug)
+    {
+        $data = config("repose.programmes.{$slug}");
+        abort_if(!$data, 404);
+
+        $sidebarLinks = collect(config('repose.programmes'))->map(function($item, $key) {
+            return ['title' => $item['title'], 'url' => route('programmes.show', $key)];
+        });
+
+        return view('templates.content-page', [
+            'data' => $data,
+            'sidebarTitle' => 'Our Programmes',
+            'sidebarLinks' => $sidebarLinks
+        ]);
+    }
+
+    public function showAudience($slug)
+    {
+        $data = config("repose.audiences.{$slug}");
+        abort_if(!$data, 404);
+
+        $sidebarLinks = collect(config('repose.audiences'))->map(function($item, $key) {
+            return ['title' => $item['title'], 'url' => route('audiences.show', $key)];
+        });
+
+        return view('templates.content-page', [
+            'data' => $data,
+            'sidebarTitle' => 'Support For You',
+            'sidebarLinks' => $sidebarLinks
+        ]);
+    }
 }

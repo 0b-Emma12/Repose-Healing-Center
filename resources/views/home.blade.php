@@ -5,6 +5,7 @@
   @include('components.sections.services-preview')
   @include('components.sections.why-choose-us')
   @include('components.sections.about-preview')
+  @include('components.sections.insurance-partners')
   @include('components.sections.faq-preview')
   @include('components.sections.cta-section')
   @include('components.sections.contact-section')

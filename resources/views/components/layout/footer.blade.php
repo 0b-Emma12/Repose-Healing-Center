@@ -55,13 +55,14 @@
 
       <!-- Quick Links -->
       <div>
-        <h3 class="text-sm font-semibold uppercase tracking-wider text-white">Company</h3>
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-white">Quick Links</h3>
         <ul class="mt-6 space-y-4">
           <li><a href="{{ route('about') }}" class="text-sm transition hover:text-yellow-500">About Us</a></li>
           <li><a href="{{ route('team') }}" class="text-sm transition hover:text-yellow-500">Our Team</a></li>
           <li><a href="{{ route('services') }}" class="text-sm transition hover:text-yellow-500">Services</a></li>
+          <li><a href="{{ route('conditions.show', 'depression') }}" class="text-sm transition hover:text-yellow-500">Conditions We Treat</a></li>
+          <li><a href="{{ route('programmes.show', 'residential-care') }}" class="text-sm transition hover:text-yellow-500">Our Programmes</a></li>
           <li><a href="{{ route('admissions') }}" class="text-sm transition hover:text-yellow-500">Admissions</a></li>
-          <li><a href="{{ route('careers') }}" class="text-sm transition hover:text-yellow-500">Careers</a></li>
           <li><a href="{{ route('contact') }}" class="text-sm transition hover:text-yellow-500">Contact Us</a></li>
         </ul>
       </div>

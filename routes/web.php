@@ -17,6 +17,11 @@ Route::get('/resources', [PageController::class, 'resources'])->name('resources'
 Route::get('/faq', [PageController::class, 'faq'])->name('faq');
 Route::get('/careers', [PageController::class, 'careers'])->name('careers');
 
+/* ---- Dynamic Content Pages ---- */
+Route::get('/conditions/{slug}', [PageController::class, 'showCondition'])->name('conditions.show');
+Route::get('/programmes/{slug}', [PageController::class, 'showProgramme'])->name('programmes.show');
+Route::get('/audiences/{slug}', [PageController::class, 'showAudience'])->name('audiences.show');
+
 /* ---- Contact ---- */
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
