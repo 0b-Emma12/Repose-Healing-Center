@@ -44,20 +44,40 @@
           </p>
         </div>
 
-        <div class="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6">
-          <div class="flex items-center gap-5">
-            <img src="{{ asset('images/staff/daniel-obote.jpg') }}" alt="Daniel Obote" class="h-16 w-16 rounded-full object-cover ring-4 ring-white shadow-sm" />
-            <div>
-              <h3 class="font-bold text-slate-900">Daniel Obote</h3>
-              <p class="text-sm text-green-600">Counseling Psychologist & CEO</p>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2">
+          <!-- Daniel Obote -->
+          <div class="flex h-full flex-col rounded-2xl border border-slate-200 bg-slate-50 p-6">
+            <div class="flex items-center gap-5">
+              <img src="{{ asset('images/staff/daniel-obote.jpg') }}" alt="Daniel Obote" class="h-16 w-16 rounded-full object-cover shadow-sm ring-4 ring-white" />
+              <div>
+                <h3 class="font-bold text-slate-900">Daniel Obote</h3>
+                <p class="text-sm text-green-600">Counseling Psychologist & CEO</p>
+              </div>
             </div>
+            <p class="mt-4 flex-grow text-sm leading-6 text-slate-600">
+              Dedicated to helping individuals overcome addiction, trauma, and emotional challenges through a person-centered approach.
+            </p>
+            <a href="{{ route('team.daniel') }}" class="mt-4 inline-flex items-center gap-1 text-sm font-bold uppercase tracking-wider text-green-600 transition hover:text-green-700">
+              Read full profile &rarr;
+            </a>
           </div>
-          <p class="mt-4 text-sm leading-6 text-slate-600">
-            Dedicated to helping individuals overcome addiction, trauma, and emotional challenges through a person-centered approach.
-          </p>
-          <a href="{{ route('team.daniel') }}" class="mt-4 inline-flex items-center gap-1 text-sm font-bold uppercase tracking-wider text-green-600 transition hover:text-green-700">
-            Read full profile &rarr;
-          </a>
+
+          <!-- Dr. Abdulrahim Shirazi -->
+          <div class="flex h-full flex-col rounded-2xl border border-slate-200 bg-slate-50 p-6">
+            <div class="flex items-center gap-5">
+              <img src="{{ asset('images/staff/abdulrahim-shirazi.jpg') }}" alt="Dr. Abdulrahim Shirazi" class="h-16 w-16 rounded-full object-cover shadow-sm ring-4 ring-white" />
+              <div>
+                <h3 class="font-bold text-slate-900">Dr. A. Shirazi</h3>
+                <p class="text-sm text-green-600">Recovery Coach</p>
+              </div>
+            </div>
+            <p class="mt-4 flex-grow text-sm leading-6 text-slate-600">
+              A retired Medical Doctor bringing medical expertise and recovery coaching experience to support individuals on their healing journey.
+            </p>
+            <a href="{{ route('team.abdulrahim') }}" class="mt-4 inline-flex items-center gap-1 text-sm font-bold uppercase tracking-wider text-green-600 transition hover:text-green-700">
+              Read full profile &rarr;
+            </a>
+          </div>
         </div>
       </div>
     </div>

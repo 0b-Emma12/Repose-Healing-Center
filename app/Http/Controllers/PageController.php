@@ -14,6 +14,11 @@ class PageController extends Controller
         return view('team.daniel-obote');
     }
 
+    public function abdulrahimShirazi()
+    {
+        return view('team.abdulrahim-shirazi');
+    }
+
     public function services()
     {
         return view('services');
