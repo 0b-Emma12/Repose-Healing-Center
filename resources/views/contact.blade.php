@@ -65,7 +65,7 @@
   <!-- Map Section -->
   <section class="h-[500px] w-full bg-slate-200">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.278784119932!2d32.4633216!3d0.0469052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d86f7b11261d7%3A0xcda8d7b3ea66a3!2sEntebbe!5e0!3m2!1sen!2sug!4v1714157121650!5m2!1sen!2sug"
+      src="https://maps.google.com/maps?q=Repose+Healing+Center,+Manyago,+Entebbe,+Uganda&output=embed&z=16"
       width="100%"
       height="100%"
       style="border:0;"
