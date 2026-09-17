@@ -37,7 +37,7 @@
               </div>
               <div class="min-w-0">
                 <h2 class="text-xl font-bold text-slate-900">{{ $section['heading'] }}</h2>
-                <div class="mt-4 h-1 w-12 bg-green-600"></div>
+                <div class="mt-4 h-1 w-12" style="background-color: #FFD500;"></div>
                 <p class="mt-5 leading-8 text-slate-600">{{ $section['text'] }}</p>
               </div>
             </div>
