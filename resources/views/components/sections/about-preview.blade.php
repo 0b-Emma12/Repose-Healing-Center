@@ -28,7 +28,7 @@
           WHO WE ARE
         </p>
 
-        <h2 class="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+        <h2 class="mt-4 text-4xl font-extrabold uppercase leading-[1.1] tracking-tight sm:text-5xl">
           Compassionate <span class="text-yellow-500">Care.</span>
         </h2>
 
@@ -36,16 +36,28 @@
           Repose Healing Center provides a supportive environment focused on rehabilitation, mental wellness, advocacy, prevention and care.
         </p>
 
-        <div class="mt-8 space-y-4 text-slate-400">
-          <p>
-            Our approach is centered on creating a safe and confidential environment where individuals can seek support and work toward positive change.
-          </p>
-          <p>
-            We believe that healing is strengthened by compassion, professional support, respect and appropriate guidance.
-          </p>
-        </div>
+        <ul class="mt-8 space-y-4 text-slate-300">
+          <li class="flex items-start gap-3">
+            <div class="mt-1 rounded-full bg-green-500/20 p-1 text-green-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            Safe and confidential environment for everyone.
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="mt-1 rounded-full bg-green-500/20 p-1 text-green-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            Professional support and appropriate guidance.
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="mt-1 rounded-full bg-green-500/20 p-1 text-green-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            Healing strengthened by respect and compassion.
+          </li>
+        </ul>
 
-        <a href="{{ route('about') }}" class="focus-ring mt-10 inline-flex items-center gap-2 rounded-xl bg-green-600 px-7 py-3.5 font-bold text-white transition hover:bg-green-700">
+        <a href="{{ route('about') }}" class="focus-ring mt-10 inline-flex items-center gap-2 rounded bg-yellow-500 px-8 py-4 text-[15px] font-bold uppercase tracking-widest text-slate-900 transition hover:bg-yellow-400 hover:-translate-y-1">
           More about us
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>

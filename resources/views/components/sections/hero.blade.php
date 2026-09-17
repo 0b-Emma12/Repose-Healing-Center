@@ -43,26 +43,26 @@
     <!-- Content -->
     <div class="container-site relative flex h-full flex-col justify-center pb-12 pt-20">
         <div class="max-w-2xl">
-            <span class="inline-block rounded-full bg-green-500/10 px-4 py-1.5 text-sm font-bold uppercase tracking-wider text-green-400 ring-1 ring-inset ring-green-500/20 backdrop-blur-sm">
+            <span class="inline-block bg-green-600 px-4 py-1.5 text-sm font-bold uppercase tracking-[0.2em] text-white">
                 Restoring Lives
             </span>
 
-            <h1 class="mt-6 text-4xl font-black tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+            <h1 class="mt-6 text-5xl font-extrabold uppercase leading-[1.1] tracking-tight text-white md:text-6xl lg:text-7xl">
                 Advocacy.<br />
                 Prevention.<br />
                 <span class="text-yellow-500">Care.</span>
             </h1>
 
-            <p class="mt-6 max-w-xl text-lg leading-8 text-slate-300 sm:text-xl">
+            <p class="mt-6 max-w-xl text-lg leading-8 text-slate-200 sm:text-xl">
                 Repose Healing Center provides a supportive environment focused on rehabilitation, mental wellness and restorative care.
             </p>
 
             <div class="mt-10 flex flex-wrap items-center gap-4">
-                <a href="{{ route('admissions') }}" class="focus-ring inline-flex items-center gap-2 rounded-xl bg-green-600 px-7 py-3.5 font-bold text-white transition hover:bg-green-700">
+                <a href="{{ route('admissions') }}" class="focus-ring inline-flex items-center gap-2 rounded bg-yellow-500 px-8 py-4 text-[15px] font-bold uppercase tracking-widest text-slate-900 transition hover:bg-yellow-400 hover:-translate-y-1">
                     Get Support
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                 </a>
-                <a href="{{ route('contact') }}" class="focus-ring inline-flex items-center gap-2 rounded-xl bg-white/10 px-7 py-3.5 font-bold text-white backdrop-blur-md transition hover:bg-white/20">
+                <a href="{{ route('contact') }}" class="focus-ring inline-flex items-center gap-2 rounded border-2 border-white bg-transparent px-8 py-4 text-[15px] font-bold uppercase tracking-widest text-white transition hover:bg-white hover:text-slate-900 hover:-translate-y-1">
                     Contact Us
                 </a>
             </div>

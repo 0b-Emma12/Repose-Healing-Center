@@ -7,18 +7,18 @@
 
   <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/80 to-transparent"></div>
 
-  <div class="container-site relative pt-24 pb-20 sm:pb-24 sm:pt-32">
-    <div class="max-w-3xl">
+  <div class="container-site relative pt-24 pb-20 text-center sm:pb-24 sm:pt-32">
+    <div class="mx-auto max-w-3xl">
       <p class="text-sm font-bold uppercase tracking-[0.2em] text-green-400">
         {{ $eyebrow }}
       </p>
 
-      <h1 class="mt-4 text-4xl font-black tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+      <h1 class="mt-4 text-4xl font-extrabold uppercase leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
         {{ $title }} <span class="text-yellow-500">{{ $accent ?? '' }}</span>
       </h1>
 
       @if(isset($description))
-        <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
           {{ $description }}
         </p>
       @endif

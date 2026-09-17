@@ -1,6 +1,28 @@
-<header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 shadow-sm backdrop-blur" id="site-header">
-  <div class="container-site">
-    <div class="flex min-h-[76px] items-center justify-between gap-4">
+<header class="sticky top-0 z-50 w-full shadow-sm" id="site-header">
+  <!-- Top Bar -->
+  <div class="hidden border-b border-white/10 bg-slate-900 px-4 py-2 text-xs font-medium text-slate-300 sm:block">
+    <div class="container-site mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <a href="tel:+256789728211" class="flex items-center gap-2 transition hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +256 789 728 211
+        </a>
+        <a href="mailto:info@reposehealing.com" class="flex items-center gap-2 transition hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          info@reposehealing.com
+        </a>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Mon-Fri 8:00 AM - 5:00 PM
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <div class="border-b border-slate-200/80 bg-white/95 backdrop-blur">
+    <div class="container-site mx-auto">
+      <div class="flex min-h-[80px] items-center justify-between gap-4">
       <a
         href="{{ route('home') }}"
         class="focus-ring flex min-w-0 items-center gap-3 rounded-lg"
@@ -32,11 +54,11 @@
         ];
       @endphp
 
-      <nav class="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
+      <nav class="hidden items-center gap-2 lg:flex" aria-label="Main navigation">
         @foreach($nav as $item)
           <a
             href="{{ $item['path'] }}"
-            class="focus-ring rounded-lg px-3 py-2 text-sm font-medium transition {{ request()->url() === $item['path'] ? 'bg-green-600 text-white' : 'text-slate-600 hover:bg-slate-50 hover:text-green-600' }}"
+            class="focus-ring rounded-lg px-3 py-2 text-[15px] font-bold tracking-wide transition {{ request()->url() === $item['path'] ? 'text-green-600' : 'text-slate-700 hover:text-green-600' }}"
           >
             {{ $item['label'] }}
           </a>
@@ -46,9 +68,9 @@
       <div class="hidden items-center gap-3 lg:flex">
         <a
           href="tel:+256789728211"
-          class="focus-ring inline-flex items-center gap-2 rounded-xl bg-green-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-green-700"
+          class="focus-ring inline-flex items-center gap-2 rounded bg-green-600 px-6 py-3 text-sm font-bold uppercase tracking-wider text-white transition hover:bg-green-700"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           Call us
         </a>
       </div>
@@ -85,6 +107,7 @@
         </a>
       </nav>
     </div>
+  </div>
   </div>
 </header>
 

@@ -8,7 +8,7 @@
           Take the next step
         </p>
 
-        <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-5xl">
+        <h2 class="mt-4 text-4xl font-extrabold uppercase leading-[1.1] tracking-tight sm:text-5xl">
           You don't have to navigate the next step alone.
         </h2>
 
@@ -19,7 +19,7 @@
 
       <a
         href="{{ route('contact') }}"
-        class="inline-flex shrink-0 items-center gap-2 rounded-xl bg-white px-7 py-3.5 font-bold text-green-600 transition hover:bg-green-50"
+        class="inline-flex shrink-0 items-center gap-2 rounded bg-yellow-500 px-8 py-4 text-[15px] font-bold uppercase tracking-widest text-slate-900 transition hover:bg-yellow-400 hover:-translate-y-1"
       >
         Contact us
         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>

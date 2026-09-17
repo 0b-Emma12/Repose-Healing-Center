@@ -22,6 +22,9 @@
   --color-yellow-400: #ffde33;
   --color-yellow-500: #FFD500;
   --color-yellow-600: #ccaa00;
+
+  /* Typography */
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* ---- Utility shorthand classes ---- */
