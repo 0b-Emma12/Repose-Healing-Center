@@ -47,3 +47,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* ---- Global Font ---- */
+body, * {
+  font-family: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+}
