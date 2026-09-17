@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* ============================================================
+   REPOSE HEALING CENTER — Global Styles
+   ============================================================ */
+
+/* Brand colour */
+@theme {
+  /* Primary: #008000 */
+  --color-green-50: #e6f2e6;
+  --color-green-100: #cce6cc;
+  --color-green-200: #99cc99;
+  --color-green-300: #66b366;
+  --color-green-400: #339933;
+  --color-green-500: #008000;
+  --color-green-600: #008000; /* Main primary */
+  --color-green-700: #006600; /* Darker hover */
+  --color-green-800: #004d00;
+  --color-green-900: #003300;
+
+  /* Secondary: #FFD500 */
+  --color-yellow-400: #ffde33;
+  --color-yellow-500: #FFD500;
+  --color-yellow-600: #ccaa00;
+}
+
+/* ---- Utility shorthand classes ---- */
+@layer utilities {
+  .container-site {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-space {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .focus-ring {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2;
+  }
+}
+
+/* ---- Scroll behaviour ---- */
+html {
+  scroll-behavior: smooth;
+}
