@@ -147,14 +147,25 @@ return [
             ',
         ],
         'organisations' => [
-            'title' => 'For Organisations (EAP)',
+            'title' => 'For Organisations',
             'eyebrow' => 'CORPORATE WELLNESS',
-            'description' => 'Employee Assistance Programmes and workplace mental health solutions.',
+            'description' => 'Support arrangements with employers, schools, and institutions to promote mental wellness in the workplace.',
             'content' => '
                 <h2>Promoting Workplace Wellbeing</h2>
-                <p>Mental health directly impacts employee productivity, morale, and retention. Repose Healing Center partners with organisations across Uganda to provide Employee Assistance Programmes (EAP) and workplace counselling services.</p>
-                <h3>Our Corporate Services</h3>
-                <p>We provide confidential counselling for employees, management training on identifying mental health distress, stress management workshops, and crisis intervention services tailored to your corporate needs.</p>
+                <p>Mental health and substance problems come to work whether or not they are invited. They arrive as absence, as errors, as a good employee going quiet, as a manager improvising responses to situations no one trained them for. Organisations that plan for this do better than organisations that are surprised by it, and Repose Healing Center works with employers who want to promote employee mental wellness and prevent mental-health-related problems in the workplace.</p>
+                <p>Our work with organisations is built around the Employee Assistance Programme, and every engagement is customised: it begins with a needs assessment of your organisation, not with a package off a shelf. The components include:</p>
+                
+                <h3>Employee Assistance Programme</h3>
+                <p>The full arrangement: needs assessment, confidential individual support for employees, counselling, education, and training, shaped to your workforce.</p>
+                
+                <h3>Workplace Counselling and Employee Support</h3>
+                <p>The individual strand: how a struggling employee gets confidential help, whether they come forward themselves or are referred.</p>
+                
+                <h3>Awareness, Psycho-education and Stress-management Training</h3>
+                <p>Clinician-led sessions that teach staff to recognise difficulty in themselves and colleagues and what to do about it, and practical training for teams under pressure.</p>
+                
+                <h3>Confidentiality and Trust</h3>
+                <p>What do we get told about an employee who uses the service? The short answer: their care is confidential, and the arrangement is designed so that using it is safe for them. An EAP that employees don\'t trust is an EAP nobody uses, and we would rather set the boundary out plainly than let it be discovered awkwardly.</p>
             ',
         ],
         'professionals' => [
