@@ -43,6 +43,22 @@
             Advocacy. Prevention. Care. Restoring Lives.
           </p>
         </div>
+
+        <div class="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+          <div class="flex items-center gap-5">
+            <img src="{{ asset('images/staff/daniel-obote.jpg') }}" alt="Daniel Obote" class="h-16 w-16 rounded-full object-cover ring-4 ring-white shadow-sm" />
+            <div>
+              <h3 class="font-bold text-slate-900">Daniel Obote</h3>
+              <p class="text-sm text-green-600">Counseling Psychologist & CEO</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm leading-6 text-slate-600">
+            Dedicated to helping individuals overcome addiction, trauma, and emotional challenges through a person-centered approach.
+          </p>
+          <a href="{{ route('team.daniel') }}" class="mt-4 inline-flex items-center gap-1 text-sm font-bold uppercase tracking-wider text-green-600 transition hover:text-green-700">
+            Read full profile &rarr;
+          </a>
+        </div>
       </div>
     </div>
   </section>
