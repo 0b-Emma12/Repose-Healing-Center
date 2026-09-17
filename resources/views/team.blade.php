@@ -22,11 +22,11 @@
         
         <!-- Daniel Obote -->
         <div class="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition-all hover:shadow-xl">
-          <div class="relative overflow-hidden aspect-[4/5] sm:aspect-square lg:aspect-[4/5]">
+          <div class="relative overflow-hidden aspect-[4/3]">
             <img 
               src="{{ asset('images/staff/daniel-obote.jpg') }}" 
               alt="Daniel Obote" 
-              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" 
+              class="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105" 
             />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
           </div>
@@ -63,11 +63,11 @@
 
         <!-- Dr. Abdulrahim Shirazi -->
         <div class="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition-all hover:shadow-xl">
-          <div class="relative overflow-hidden aspect-[4/5] sm:aspect-square lg:aspect-[4/5]">
+          <div class="relative overflow-hidden aspect-[4/3]">
             <img 
               src="{{ asset('images/staff/abdulrahim-shirazi.jpg') }}" 
               alt="Dr. Abdulrahim Shirazi" 
-              class="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105" 
+              class="h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105" 
             />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
           </div>
