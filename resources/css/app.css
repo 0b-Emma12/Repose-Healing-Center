@@ -50,5 +50,5 @@ html {
 
 /* ---- Global Font ---- */
 body, * {
-  font-family: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  font-family: 'Outfit', ui-sans-serif, system-ui, sans-serif !important;
 }
