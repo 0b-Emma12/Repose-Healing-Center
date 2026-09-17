@@ -11,8 +11,7 @@ use App\Http\Controllers\AdminController;
 /* ---- Public pages ---- */
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [PageController::class, 'about'])->name('about');
-Route::get('/team/daniel-obote', [PageController::class, 'danielObote'])->name('team.daniel');
-Route::get('/team/abdulrahim-shirazi', [PageController::class, 'abdulrahimShirazi'])->name('team.abdulrahim');
+Route::get('/team', [PageController::class, 'team'])->name('team');
 Route::get('/services', [PageController::class, 'services'])->name('services');
 Route::get('/resources', [PageController::class, 'resources'])->name('resources');
 Route::get('/faq', [PageController::class, 'faq'])->name('faq');

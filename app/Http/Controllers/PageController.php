@@ -9,14 +9,9 @@ class PageController extends Controller
         return view('about');
     }
 
-    public function danielObote()
+    public function team()
     {
-        return view('team.daniel-obote');
-    }
-
-    public function abdulrahimShirazi()
-    {
-        return view('team.abdulrahim-shirazi');
+        return view('team');
     }
 
     public function services()
