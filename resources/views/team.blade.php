@@ -24,17 +24,17 @@
         <div class="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition hover:shadow-md">
           <button 
             @click="activeMember = (activeMember === 'daniel' ? null : 'daniel')" 
-            class="focus-ring flex w-full items-center gap-5 p-5 text-left sm:gap-6 sm:p-6"
+            class="group focus-ring flex w-full items-center gap-4 p-5 text-left sm:gap-6 sm:p-6"
             :aria-expanded="activeMember === 'daniel'"
           >
-            <img src="{{ asset('images/staff/daniel-obote.jpg') }}" alt="Daniel Obote" class="h-20 w-20 shrink-0 rounded-full object-cover ring-2 ring-slate-100 sm:h-24 sm:w-24" />
+            <img src="{{ asset('images/staff/daniel-obote.jpg') }}" alt="Daniel Obote" class="h-16 w-16 shrink-0 rounded-full object-cover shadow-sm ring-1 ring-slate-200 sm:h-20 sm:w-20" />
             <div class="flex-grow">
-              <h3 class="text-xl font-bold text-slate-900 sm:text-2xl">Daniel Obote</h3>
-              <p class="mt-1 text-sm font-semibold text-green-600 sm:text-base">Counseling Psychologist & CEO</p>
+              <h3 class="text-lg font-bold text-slate-900 sm:text-xl">Daniel Obote</h3>
+              <p class="mt-0.5 text-sm font-medium text-green-600">Counseling Psychologist & CEO</p>
             </div>
-            <div class="shrink-0 text-slate-400">
-              <svg x-show="activeMember !== 'daniel'" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-              <svg x-show="activeMember === 'daniel'" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+            <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-50 text-slate-400 transition group-hover:bg-slate-100">
+              <svg x-show="activeMember !== 'daniel'" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              <svg x-show="activeMember === 'daniel'" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
             </div>
           </button>
           
@@ -59,17 +59,17 @@
         <div class="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition hover:shadow-md">
           <button 
             @click="activeMember = (activeMember === 'abdulrahim' ? null : 'abdulrahim')" 
-            class="focus-ring flex w-full items-center gap-5 p-5 text-left sm:gap-6 sm:p-6"
+            class="group focus-ring flex w-full items-center gap-4 p-5 text-left sm:gap-6 sm:p-6"
             :aria-expanded="activeMember === 'abdulrahim'"
           >
-            <img src="{{ asset('images/staff/abdulrahim-shirazi.jpg') }}" alt="Dr. Abdulrahim Shirazi" class="h-20 w-20 shrink-0 rounded-full object-cover ring-2 ring-slate-100 sm:h-24 sm:w-24" />
+            <img src="{{ asset('images/staff/abdulrahim-shirazi.jpg') }}" alt="Dr. Abdulrahim Shirazi" class="h-16 w-16 shrink-0 rounded-full object-cover shadow-sm ring-1 ring-slate-200 sm:h-20 sm:w-20" />
             <div class="flex-grow">
-              <h3 class="text-xl font-bold text-slate-900 sm:text-2xl">Dr. Abdulrahim Shirazi</h3>
-              <p class="mt-1 text-sm font-semibold text-green-600 sm:text-base">Medical Doctor & Recovery Coach</p>
+              <h3 class="text-lg font-bold text-slate-900 sm:text-xl">Dr. Abdulrahim Shirazi</h3>
+              <p class="mt-0.5 text-sm font-medium text-green-600">Medical Doctor & Recovery Coach</p>
             </div>
-            <div class="shrink-0 text-slate-400">
-              <svg x-show="activeMember !== 'abdulrahim'" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-              <svg x-show="activeMember === 'abdulrahim'" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+            <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-50 text-slate-400 transition group-hover:bg-slate-100">
+              <svg x-show="activeMember !== 'abdulrahim'" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              <svg x-show="activeMember === 'abdulrahim'" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
             </div>
           </button>
           
