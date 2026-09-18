@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Admissions | Repose Healing Center')
 
@@ -7,7 +7,7 @@
       'eyebrow' => 'ADMISSIONS',
       'title' => 'Begin Your',
       'accent' => 'Journey',
-      'description' => 'Taking the first step toward healing takes courage. Our admissions process is simple, confidential and compassionate — we are here to guide you every step of the way.'
+      'description' => 'Taking the first step toward healing takes courage. Our admissions process is simple, confidential and compassionate - we are here to guide you every step of the way.'
   ])
 
   {{-- Admission Steps --}}
@@ -26,7 +26,7 @@
           $steps = [
             ['num' => '01', 'title' => 'Reach Out', 'desc' => 'Contact us by phone, WhatsApp or by completing the enquiry form below. All contact is treated with complete confidentiality.', 'icon' => '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>'],
             ['num' => '02', 'title' => 'Initial Assessment', 'desc' => 'Our team will conduct a confidential assessment to understand your needs and determine the most appropriate level of care for you.', 'icon' => '<path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>'],
-            ['num' => '03', 'title' => 'Treatment Planning', 'desc' => 'We develop a personalised care plan tailored to your specific goals, challenges and circumstances — built around you.', 'icon' => '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>'],
+            ['num' => '03', 'title' => 'Treatment Planning', 'desc' => 'We develop a personalised care plan tailored to your specific goals, challenges and circumstances - built around you.', 'icon' => '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>'],
             ['num' => '04', 'title' => 'Begin Treatment', 'desc' => 'You are welcomed into our care. Our multidisciplinary team supports you through every stage of your healing journey.', 'icon' => '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>'],
           ];
         @endphp
@@ -78,7 +78,7 @@
           @php
             $programmes = [
               ['title' => 'Inpatient / Residential Care', 'desc' => 'For individuals who require a structured, 24-hour supportive environment to focus fully on recovery away from everyday triggers.'],
-              ['title' => 'Outpatient Programme', 'desc' => 'For those who need professional support while maintaining daily responsibilities — flexible sessions designed around your life.'],
+              ['title' => 'Outpatient Programme', 'desc' => 'For those who need professional support while maintaining daily responsibilities - flexible sessions designed around your life.'],
               ['title' => 'Individual Counselling', 'desc' => 'One-to-one sessions with a qualified counsellor focusing on trauma, addiction, emotional challenges or personal growth.'],
               ['title' => 'Family Support', 'desc' => 'We involve and support families as an essential part of the healing journey, providing guidance and education.'],
             ];
@@ -150,7 +150,7 @@
               ['icon' => '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>', 'title' => 'Strictly Confidential', 'body' => 'Your enquiry is handled with complete discretion and respect for your privacy.'],
               ['icon' => '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>', 'title' => 'Call Us', 'body' => '+256 789 728 211 / +256 703 802 019'],
               ['icon' => '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>', 'title' => 'WhatsApp', 'body' => 'Chat with us at +256 789 728 211'],
-              ['icon' => '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16.5 12"/>', 'title' => 'Working Hours', 'body' => 'Mon – Sat, 8:00 AM – 6:00 PM'],
+              ['icon' => '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16.5 12"/>', 'title' => 'Working Hours', 'body' => 'Mon - Sat, 8:00 AM - 6:00 PM'],
             ];
           @endphp
           @foreach($info as $item)

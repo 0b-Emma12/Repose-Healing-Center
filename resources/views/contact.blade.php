@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Contact Us | Repose Healing Center')
 
@@ -34,7 +34,7 @@
               [
                 'icon' => '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16.5 12"/>',
                 'title' => 'Working Hours',
-                'value' => 'Monday – Saturday, 8:00 AM – 6:00 PM'
+                'value' => 'Monday - Saturday, 8:00 AM - 6:00 PM'
               ]
             ];
           @endphp
