@@ -161,8 +161,8 @@
         </div>
       </div>
 
-      <div class="border border-slate-200 bg-white p-6 shadow-xl sm:p-9">
-        @include('components.forms.admission-form')
+      <div class="bg-white p-6 shadow-xl sm:p-9 lg:-mt-16 relative z-10 border border-slate-200">
+        @include('components.forms.interactive-enquiry')
       </div>
     </div>
   </section>
