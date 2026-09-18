@@ -1,4 +1,4 @@
-﻿<div x-data="enquiryForm()" class="w-full">
+<div x-data="enquiryForm()" class="w-full">
     <!-- Intro Step -->
     <div x-show="step === -1" x-transition.opacity>
         <div class="mb-4 font-black tracking-widest text-[#FFD500] uppercase text-xs">Confidential enquiry</div>
@@ -181,7 +181,6 @@
             back() { if (this.step > -1) this.step--; },
             selectOption(opt) {
                 this.answers[this.currentQuestion.key] = opt;
-                setTimeout(() => this.next(), 200); // auto advance on single choice
             },
             buildMessage() {
                 return `New enquiry from the Repose website:\nThis is for: ${this.answers.who}\nMain concern: ${this.answers.concern}\nUrgency: ${this.answers.urgency}\nType of care: ${this.answers.care_type}\nAge range: ${this.answers.age_range}\nLocation: ${this.answers.location}\nPreferred contact: ${this.answers.contact_method}\nName: ${this.answers.name}\nPhone: ${this.answers.phone}\nEmail: ${this.answers.email || '-'}\nNotes: ${this.answers.notes || '-'}`;
