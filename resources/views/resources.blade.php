@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Resources | Repose Healing Center')
 
@@ -68,7 +68,7 @@
         @php
           $articles = [
             'How to talk to a family member about their drinking',
-            'What actually happens during detox — a plain explanation',
+            'What actually happens during detox - a plain explanation',
             'Depression vs. "just being stressed": how to tell the difference',
             'Recognizing early signs of relapse',
             'Supporting a loved one through treatment without enabling',

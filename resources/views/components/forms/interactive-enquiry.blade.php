@@ -1,10 +1,10 @@
-<div x-data="enquiryForm()" class="w-full">
+﻿<div x-data="enquiryForm()" class="w-full">
     <!-- Intro Step -->
     <div x-show="step === -1" x-transition.opacity>
         <div class="mb-4 font-black tracking-widest text-[#FFD500] uppercase text-xs">Confidential enquiry</div>
         <h2 class="text-3xl font-extrabold text-slate-900 mb-4 uppercase tracking-wide">Let's find the right first step</h2>
         <div class="h-0.5 w-12 bg-[#FFD500] mb-6"></div>
-        <p class="text-slate-600 mb-6 leading-relaxed">A few short questions help our admissions team understand your situation before you speak with anyone — no commitment, no cost, and nothing shared beyond our team.</p>
+        <p class="text-slate-600 mb-6 leading-relaxed">A few short questions help our admissions team understand your situation before you speak with anyone - no commitment, no cost, and nothing shared beyond our team.</p>
         <ul class="space-y-3 text-slate-600 mb-8">
             <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-green-500 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
@@ -107,19 +107,19 @@
         </button>
 
         <h2 class="text-2xl font-extrabold text-slate-900 mb-2 uppercase tracking-wide">You're ready to reach out</h2>
-        <p class="text-slate-500 mb-8">Here's a summary of what you shared. Pick whichever way is easiest for you — our admissions team will follow up.</p>
+        <p class="text-slate-500 mb-8">Here's a summary of what you shared. Pick whichever way is easiest for you - our admissions team will follow up.</p>
 
         <div class="bg-slate-50 rounded-xl border border-slate-200 p-6 mb-8 space-y-3 text-sm">
-            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">This is for</span><span class="font-semibold text-slate-900 text-right" x-text="answers.who || '—'"></span></div>
-            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Main concern</span><span class="font-semibold text-slate-900 text-right" x-text="answers.concern || '—'"></span></div>
-            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Urgency</span><span class="font-semibold text-slate-900 text-right" x-text="answers.urgency || '—'"></span></div>
-            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Type of care</span><span class="font-semibold text-slate-900 text-right" x-text="answers.care_type || '—'"></span></div>
-            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Age range</span><span class="font-semibold text-slate-900 text-right" x-text="answers.age_range || '—'"></span></div>
-            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Location</span><span class="font-semibold text-slate-900 text-right" x-text="answers.location || '—'"></span></div>
-            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Preferred contact</span><span class="font-semibold text-slate-900 text-right" x-text="answers.contact_method || '—'"></span></div>
-            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Name</span><span class="font-semibold text-slate-900 text-right" x-text="answers.name || '—'"></span></div>
-            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Phone</span><span class="font-semibold text-slate-900 text-right" x-text="answers.phone || '—'"></span></div>
-            <div class="flex justify-between"><span class="text-slate-500">Email</span><span class="font-semibold text-slate-900 text-right" x-text="answers.email || '—'"></span></div>
+            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">This is for</span><span class="font-semibold text-slate-900 text-right" x-text="answers.who || '-'"></span></div>
+            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Main concern</span><span class="font-semibold text-slate-900 text-right" x-text="answers.concern || '-'"></span></div>
+            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Urgency</span><span class="font-semibold text-slate-900 text-right" x-text="answers.urgency || '-'"></span></div>
+            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Type of care</span><span class="font-semibold text-slate-900 text-right" x-text="answers.care_type || '-'"></span></div>
+            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Age range</span><span class="font-semibold text-slate-900 text-right" x-text="answers.age_range || '-'"></span></div>
+            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Location</span><span class="font-semibold text-slate-900 text-right" x-text="answers.location || '-'"></span></div>
+            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Preferred contact</span><span class="font-semibold text-slate-900 text-right" x-text="answers.contact_method || '-'"></span></div>
+            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Name</span><span class="font-semibold text-slate-900 text-right" x-text="answers.name || '-'"></span></div>
+            <div class="flex justify-between border-b border-slate-200 pb-3"><span class="text-slate-500">Phone</span><span class="font-semibold text-slate-900 text-right" x-text="answers.phone || '-'"></span></div>
+            <div class="flex justify-between"><span class="text-slate-500">Email</span><span class="font-semibold text-slate-900 text-right" x-text="answers.email || '-'"></span></div>
         </div>
 
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -157,13 +157,13 @@
             },
             questions: [
                 { key: 'who', title: 'Who is this enquiry for?', sub: 'This helps us prepare the right first conversation.', type: 'single', options: ['Myself', 'A family member', 'A friend', 'Someone else in my care'] },
-                { key: 'concern', title: 'What\'s the main concern?', sub: 'There\'s no wrong answer here — this just guides who calls you back.', type: 'single', options: ['Alcohol use', 'Drug use', 'Mental health & emotional wellbeing', 'Both substance use and mental health', 'Not sure yet'] },
+                { key: 'concern', title: 'What\'s the main concern?', sub: 'There\'s no wrong answer here - this just guides who calls you back.', type: 'single', options: ['Alcohol use', 'Drug use', 'Mental health & emotional wellbeing', 'Both substance use and mental health', 'Not sure yet'] },
                 { key: 'urgency', title: 'How urgent does this feel?', sub: '', type: 'single', options: ['We need help this week', 'Within the next month', 'Just exploring options for now'] },
-                { key: 'care_type', title: 'What kind of care are you considering?', sub: '', type: 'single', options: ['Residential / live-in care', 'Outpatient / visiting sessions', 'Not sure — I\'d like guidance'] },
-                { key: 'age_range', title: 'What\'s the age range of the person needing care?', sub: '', type: 'single', options: ['Under 18', '18–25', '26–40', '41–60', '60 and above'] },
-                { key: 'location', title: 'Where are you located?', sub: 'District or town is enough — e.g. Kampala, Wakiso, Entebbe.', type: 'text', placeholder: 'e.g. Entebbe, Wakiso District' },
+                { key: 'care_type', title: 'What kind of care are you considering?', sub: '', type: 'single', options: ['Residential / live-in care', 'Outpatient / visiting sessions', 'Not sure - I\'d like guidance'] },
+                { key: 'age_range', title: 'What\'s the age range of the person needing care?', sub: '', type: 'single', options: ['Under 18', '18-25', '26-40', '41-60', '60 and above'] },
+                { key: 'location', title: 'Where are you located?', sub: 'District or town is enough - e.g. Kampala, Wakiso, Entebbe.', type: 'text', placeholder: 'e.g. Entebbe, Wakiso District' },
                 { key: 'contact_method', title: 'How would you prefer we reach you?', sub: '', type: 'single', options: ['Phone call', 'WhatsApp message', 'Email'] },
-                { key: 'details', title: 'Almost done — how can we reach you?', sub: 'Your details stay confidential and go only to our admissions team.', type: 'contact' }
+                { key: 'details', title: 'Almost done - how can we reach you?', sub: 'Your details stay confidential and go only to our admissions team.', type: 'contact' }
             ],
             get totalSteps() { return this.questions.length; },
             get currentQuestion() { return this.questions[this.step]; },
@@ -184,13 +184,13 @@
                 setTimeout(() => this.next(), 200); // auto advance on single choice
             },
             buildMessage() {
-                return `New enquiry from the Repose website:\nThis is for: ${this.answers.who}\nMain concern: ${this.answers.concern}\nUrgency: ${this.answers.urgency}\nType of care: ${this.answers.care_type}\nAge range: ${this.answers.age_range}\nLocation: ${this.answers.location}\nPreferred contact: ${this.answers.contact_method}\nName: ${this.answers.name}\nPhone: ${this.answers.phone}\nEmail: ${this.answers.email || '—'}\nNotes: ${this.answers.notes || '—'}`;
+                return `New enquiry from the Repose website:\nThis is for: ${this.answers.who}\nMain concern: ${this.answers.concern}\nUrgency: ${this.answers.urgency}\nType of care: ${this.answers.care_type}\nAge range: ${this.answers.age_range}\nLocation: ${this.answers.location}\nPreferred contact: ${this.answers.contact_method}\nName: ${this.answers.name}\nPhone: ${this.answers.phone}\nEmail: ${this.answers.email || '-'}\nNotes: ${this.answers.notes || '-'}`;
             },
             get waUrl() {
                 return 'https://wa.me/256789728211?text=' + encodeURIComponent(this.buildMessage());
             },
             get mailUrl() {
-                return 'mailto:reposehealingcenter@gmail.com?subject=' + encodeURIComponent('New enquiry from website — ' + this.answers.name) + '&body=' + encodeURIComponent(this.buildMessage());
+                return 'mailto:reposehealingcenter@gmail.com?subject=' + encodeURIComponent('New enquiry from website - ' + this.answers.name) + '&body=' + encodeURIComponent(this.buildMessage());
             }
         }));
     });

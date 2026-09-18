@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'About Us | Repose Healing Center')
 
@@ -7,7 +7,7 @@
       'eyebrow' => 'ABOUT REPOSE',
       'title' => 'A Safe Place',
       'accent' => 'To Heal',
-      'description' => 'Professional rehabilitation and mental wellness services in Entebbe, Uganda — safe, confidential and evidence-based care.'
+      'description' => 'Professional rehabilitation and mental wellness services in Entebbe, Uganda - safe, confidential and evidence-based care.'
   ])
 
   <section class="section-space bg-white">
@@ -130,7 +130,7 @@
           </div>
           <div>
             <h3 class="text-xl font-bold text-slate-900"><span class="font-bold text-slate-800">[Medical / Supervised]</span> Detox</h3>
-            <p class="mt-2 text-slate-600 leading-relaxed"><span class="font-bold text-slate-800">[Confirm actual capability: Is detox medically supervised on-site, or is there a referral pathway to a hospital partner for medical detox before admission? Be precise — this is a safety-critical claim.]</span></p>
+            <p class="mt-2 text-slate-600 leading-relaxed"><span class="font-bold text-slate-800">[Confirm actual capability: Is detox medically supervised on-site, or is there a referral pathway to a hospital partner for medical detox before admission? Be precise - this is a safety-critical claim.]</span></p>
           </div>
         </div>
 
@@ -160,7 +160,7 @@
           </div>
           <div>
             <h3 class="text-xl font-bold text-slate-900">Family Involvement</h3>
-            <p class="mt-2 text-slate-600 leading-relaxed"><span class="font-bold text-slate-800">[Describe actual family program — education sessions, scheduled visitation, family therapy — whatever genuinely happens.]</span></p>
+            <p class="mt-2 text-slate-600 leading-relaxed"><span class="font-bold text-slate-800">[Describe actual family program - education sessions, scheduled visitation, family therapy - whatever genuinely happens.]</span></p>
           </div>
         </div>
 
@@ -170,7 +170,7 @@
           </div>
           <div>
             <h3 class="text-xl font-bold text-slate-900">Aftercare Planning</h3>
-            <p class="mt-2 text-slate-600 leading-relaxed">Before discharge, each client receives a structured aftercare and relapse-prevention plan to support continuity of care once they return home. <span class="font-bold text-slate-800">[Describe what this actually includes — referral to outpatient counseling, community support groups, check-in calls, etc.]</span></p>
+            <p class="mt-2 text-slate-600 leading-relaxed">Before discharge, each client receives a structured aftercare and relapse-prevention plan to support continuity of care once they return home. <span class="font-bold text-slate-800">[Describe what this actually includes - referral to outpatient counseling, community support groups, check-in calls, etc.]</span></p>
           </div>
         </div>
 

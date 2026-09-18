@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Weekly Schedule | Repose Healing Center')
 
@@ -38,7 +38,7 @@
               </tr>
               <tr class="hover:bg-slate-50 transition-colors">
                 <td class="py-4 px-6 font-semibold text-slate-700">11:00 AM</td>
-                <td class="py-4 px-6 text-slate-600"><span class="font-bold text-slate-800">[Activity — fitness, structured chores, skills session]</span></td>
+                <td class="py-4 px-6 text-slate-600"><span class="font-bold text-slate-800">[Activity - fitness, structured chores, skills session]</span></td>
               </tr>
               <tr class="hover:bg-slate-50 transition-colors">
                 <td class="py-4 px-6 font-semibold text-slate-700">1:00 PM</td>

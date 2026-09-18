@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 return [
     'conditions' => [
@@ -44,7 +44,7 @@ return [
             'description' => 'Treatment for other substances including inhalants and stimulants.',
             'content' => '
                 <h2>Other Substance Use Disorders</h2>
-                <p>[List any others actually treated — e.g. inhalants, other stimulants]</p>
+                <p>[List any others actually treated - e.g. inhalants, other stimulants]</p>
             ',
         ],
         'depression' => [
@@ -53,7 +53,7 @@ return [
             'description' => 'Support for individuals experiencing persistent low mood and loss of interest.',
             'content' => '
                 <h2>Depression</h2>
-                <p>Support for individuals experiencing persistent low mood, loss of interest, and related symptoms, delivered with attention to reducing stigma — a significant barrier to care in many Ugandan communities.</p>
+                <p>Support for individuals experiencing persistent low mood, loss of interest, and related symptoms, delivered with attention to reducing stigma - a significant barrier to care in many Ugandan communities.</p>
             ',
         ],
         'anxiety' => [
@@ -71,7 +71,7 @@ return [
             'description' => 'Trauma-informed care for individuals affected by traumatic experiences.',
             'content' => '
                 <h2>Trauma and PTSD</h2>
-                <p>Trauma-informed care for individuals affected by traumatic experiences, including <span class="font-bold text-slate-800">[if applicable: survivors of gender-based violence, conflict-related trauma, or other relevant local contexts — confirm scope of practice]</span>.</p>
+                <p>Trauma-informed care for individuals affected by traumatic experiences, including <span class="font-bold text-slate-800">[if applicable: survivors of gender-based violence, conflict-related trauma, or other relevant local contexts - confirm scope of practice]</span>.</p>
             ',
         ],
         'dual-diagnosis' => [
@@ -80,7 +80,7 @@ return [
             'description' => 'Integrated care for clients experiencing both substance use and a mental health condition.',
             'content' => '
                 <h2>Dual Diagnosis</h2>
-                <p>Integrated care for clients experiencing both substance use and a co-occurring mental health condition — treated together rather than separately, since one often drives the other.</p>
+                <p>Integrated care for clients experiencing both substance use and a co-occurring mental health condition - treated together rather than separately, since one often drives the other.</p>
             ',
         ],
     ],

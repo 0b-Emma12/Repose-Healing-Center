@@ -1,4 +1,4 @@
-<section class="section-space bg-slate-50">
+﻿<section class="section-space bg-slate-50">
   <div class="container-site">
     <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
       <div>
@@ -9,7 +9,7 @@
             'align' => 'left',
         ])
         <p class="mt-6 text-lg leading-8 text-slate-600">
-          At Repose Healing Center, treatment addresses the underlying causes of substance use and mental health difficulty through structured therapy, clinical support, and a stable residential or outpatient environment — not a one-size-fits-all program.
+          At Repose Healing Center, treatment addresses the underlying causes of substance use and mental health difficulty through structured therapy, clinical support, and a stable residential or outpatient environment - not a one-size-fits-all program.
         </p>
         
         <div class="mt-10 space-y-8">
@@ -29,7 +29,7 @@
             </div>
             <div>
               <h3 class="text-xl font-bold text-slate-900">Evidence-Based Methods</h3>
-              <p class="mt-2 leading-7 text-slate-600">Our clinical team uses established therapeutic approaches — including <span class="font-bold text-slate-800">[CBT / DBT / motivational interviewing]</span> — combined with ongoing clinical review.</p>
+              <p class="mt-2 leading-7 text-slate-600">Our clinical team uses established therapeutic approaches - including <span class="font-bold text-slate-800">[CBT / DBT / motivational interviewing]</span> - combined with ongoing clinical review.</p>
             </div>
           </div>
 

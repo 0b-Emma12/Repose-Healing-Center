@@ -12,7 +12,9 @@
 
   <section class="section-space bg-slate-50 relative">
     <div class="container-site max-w-3xl relative z-10 lg:-mt-24">
-      @include('components.forms.interactive-enquiry')
+      <div class="bg-white p-6 shadow-xl sm:p-12 border border-slate-200 rounded-xl">
+        @include('components.forms.interactive-enquiry')
+      </div>
     </div>
   </section>
 @endsection

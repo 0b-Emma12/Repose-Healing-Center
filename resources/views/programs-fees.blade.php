@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Programs & Fees | Repose Healing Center')
 
@@ -54,7 +54,7 @@
             <div class="prose prose-lg text-slate-600 max-w-none">
                 <p>Understanding cost should not be a barrier to reaching out. Contact us for a confidential conversation about program fees.</p>
                 <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 my-6 text-slate-800">
-                    <strong><span class="font-bold text-slate-900">[If possible, give at least a starting range or "from UGX X" — this single change removes one of the largest hesitation points for Ugandan families. If sliding-scale fees, payment plans, or partial NHIF-equivalent support are available, state this clearly — it is often the deciding factor for local families.]</span></strong>
+                    <strong><span class="font-bold text-slate-900">[If possible, give at least a starting range or "from UGX X" - this single change removes one of the largest hesitation points for Ugandan families. If sliding-scale fees, payment plans, or partial NHIF-equivalent support are available, state this clearly - it is often the deciding factor for local families.]</span></strong>
                 </div>
             </div>
         </div>
