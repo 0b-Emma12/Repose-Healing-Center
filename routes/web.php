@@ -16,6 +16,8 @@ Route::get('/services', [PageController::class, 'services'])->name('services');
 Route::get('/resources', [PageController::class, 'resources'])->name('resources');
 Route::get('/faq', [PageController::class, 'faq'])->name('faq');
 Route::get('/careers', [PageController::class, 'careers'])->name('careers');
+Route::get('/schedule', [PageController::class, 'schedule'])->name('schedule');
+Route::get('/programs-fees', [PageController::class, 'programsFees'])->name('programs-fees');
 
 /* ---- Dynamic Content Pages ---- */
 Route::get('/conditions/{slug}', [PageController::class, 'showCondition'])->name('conditions.show');

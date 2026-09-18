@@ -62,6 +62,8 @@
           <li><a href="{{ route('services') }}" class="text-sm transition hover:text-yellow-500">Services</a></li>
           <li><a href="{{ route('conditions.show', 'depression') }}" class="text-sm transition hover:text-yellow-500">Conditions We Treat</a></li>
           <li><a href="{{ route('programmes.show', 'residential-care') }}" class="text-sm transition hover:text-yellow-500">Our Programmes</a></li>
+          <li><a href="{{ route('programs-fees') }}" class="text-sm transition hover:text-yellow-500">Programs & Fees</a></li>
+          <li><a href="{{ route('schedule') }}" class="text-sm transition hover:text-yellow-500">Weekly Schedule</a></li>
           <li><a href="{{ route('admissions') }}" class="text-sm transition hover:text-yellow-500">Admissions</a></li>
           <li><a href="{{ route('contact') }}" class="text-sm transition hover:text-yellow-500">Contact Us</a></li>
         </ul>

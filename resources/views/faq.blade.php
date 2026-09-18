@@ -23,11 +23,16 @@
       <div class="mt-14 space-y-4">
         @php
           $faqs = [
-            'How can I contact Repose Healing Center?' => 'You can call +256 789 728 211 or +256 703 802 019, email reposehealingcenter@gmail.com, or use the contact form.',
+            'What conditions does Repose treat?' => 'We provide treatment for substance use disorders (including alcohol, cannabis/njaga, khat/miraa, and opioid dependence) as well as co-occurring mental health conditions such as depression, anxiety, trauma, and PTSD.',
+            'Is treatment confidential?' => 'Yes. Repose Healing Center places absolute emphasis on safe, dignified, and strictly confidential care. We do not share your information without explicit consent.',
+            'What happens during the assessment/admission process?' => 'Every client begins with a confidential clinical assessment to understand their substance use history, mental health needs, and family situation. This helps us determine the appropriate level of care and build a personalized treatment plan.',
+            'Do you offer medical detox, or do you refer to a hospital partner?' => '[Confirm actual capability: Yes, we provide 24-hour medically supervised detoxification on-site / We partner with [Hospital Name] for medical detox prior to admission.]',
+            'Can family visit or be involved in treatment?' => 'Yes. We recognize the central role family plays in the recovery journey. We integrate [family education sessions / family therapy / scheduled visitation] into the treatment process.',
+            'What does aftercare look like once someone leaves Repose?' => 'Before discharge, each client receives a structured aftercare and relapse-prevention plan. This typically includes [referral to outpatient counseling, community support groups, and check-in calls].',
+            'What are the costs, and are payment plans available?' => 'Understanding cost should not be a barrier to reaching out. Please contact us for a confidential conversation about program fees. [Add specific details here if applicable: starting range, sliding scale, payment plans].',
+            'How can I contact Repose Healing Center?' => 'You can call +256 789 728 211 or +256 703 802 019, email reposehealingcenter@gmail.com, or use the interactive enquiry form.',
             'Where is Repose Healing Center located?' => 'Repose Healing Center is located on Ssese View Road, Plot 2, Manyago, Entebbe, Uganda.',
-            'When is the center open?' => 'The center operates Monday to Saturday, from 8:00 AM to 6:00 PM.',
-            'Can I make an enquiry before visiting?' => 'Yes. You can contact the center or submit an admission enquiry to discuss the next steps before visiting.',
-            'Is confidentiality important?' => 'Yes. Repose Healing Center places emphasis on safe and confidential care and provides information about confidentiality and data privacy.'
+            'When is the center open?' => 'The center operates Monday to Saturday, from 8:00 AM to 6:00 PM.'
           ];
         @endphp
 

@@ -2,9 +2,11 @@
 
 @section('content')
   @include('components.sections.hero')
+  @include('components.sections.credential-strip')
   @include('components.sections.services-preview')
+  @include('components.sections.how-treatment-works')
+  @include('components.sections.testimonials-preview')
   @include('components.sections.why-choose-us')
-  @include('components.sections.about-preview')
   @include('components.sections.insurance-partners')
   @include('components.sections.faq-preview')
   @include('components.sections.cta-section')

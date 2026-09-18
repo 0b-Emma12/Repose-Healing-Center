@@ -102,5 +102,86 @@
         @endforeach
       </div>
     </div>
+  <section class="section-space bg-white">
+    <div class="container-site">
+      @include('components.ui.section-title', [
+          'eyebrow' => 'TREATMENT JOURNEY',
+          'title' => 'What a Program',
+          'accent' => 'Includes',
+          'description' => 'A comprehensive, step-by-step approach to rehabilitation and mental wellness.',
+          'align' => 'center'
+      ])
+
+      <div class="mt-14 max-w-4xl mx-auto space-y-8">
+        
+        <div class="flex gap-6">
+          <div class="flex-none">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-green-600 font-bold text-lg">1</div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900">Assessment and Admission</h3>
+            <p class="mt-2 text-slate-600 leading-relaxed">Every client begins with a confidential clinical assessment to determine the appropriate level of care, whether residential or outpatient.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-none">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-green-600 font-bold text-lg">2</div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900"><span class="font-bold text-slate-800">[Medical / Supervised]</span> Detox</h3>
+            <p class="mt-2 text-slate-600 leading-relaxed"><span class="font-bold text-slate-800">[Confirm actual capability: Is detox medically supervised on-site, or is there a referral pathway to a hospital partner for medical detox before admission? Be precise — this is a safety-critical claim.]</span></p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-none">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-green-600 font-bold text-lg">3</div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900">Daily Structure</h3>
+            <p class="mt-2 text-slate-600 leading-relaxed">A consistent daily schedule combining individual counseling, group therapy, and structured activity supports stability and engagement during treatment.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-none">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-green-600 font-bold text-lg">4</div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900">Individual and Group Therapy</h3>
+            <p class="mt-2 text-slate-600 leading-relaxed">One-to-one counseling sessions alongside group therapy, where clients build peer support and accountability alongside recovery skills.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-none">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-green-600 font-bold text-lg">5</div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900">Family Involvement</h3>
+            <p class="mt-2 text-slate-600 leading-relaxed"><span class="font-bold text-slate-800">[Describe actual family program — education sessions, scheduled visitation, family therapy — whatever genuinely happens.]</span></p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-none">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-green-600 font-bold text-lg">6</div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900">Aftercare Planning</h3>
+            <p class="mt-2 text-slate-600 leading-relaxed">Before discharge, each client receives a structured aftercare and relapse-prevention plan to support continuity of care once they return home. <span class="font-bold text-slate-800">[Describe what this actually includes — referral to outpatient counseling, community support groups, check-in calls, etc.]</span></p>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center pt-8 border-t border-slate-100">
+          <a href="{{ route('programs-fees') }}" class="inline-flex items-center gap-2 rounded bg-yellow-500 px-8 py-4 text-[15px] font-bold uppercase tracking-widest text-slate-900 transition hover:bg-yellow-400">
+            View Programs & Fees
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
   </section>
 @endsection

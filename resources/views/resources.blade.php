@@ -53,4 +53,49 @@
       </div>
     </div>
   </section>
+
+  <section class="section-space bg-slate-50 border-t border-slate-200">
+    <div class="container-site">
+      @include('components.ui.section-title', [
+          'eyebrow' => 'ARTICLES & INSIGHTS',
+          'title' => 'Read Our',
+          'accent' => 'Latest Articles',
+          'description' => 'Answers to the real questions worried families search for, framed to reduce stigma and provide clear guidance.',
+          'align' => 'left'
+      ])
+
+      <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        @php
+          $articles = [
+            'How to talk to a family member about their drinking',
+            'What actually happens during detox — a plain explanation',
+            'Depression vs. "just being stressed": how to tell the difference',
+            'Recognizing early signs of relapse',
+            'Supporting a loved one through treatment without enabling',
+            'Understanding dual diagnosis: when addiction and mental illness occur together',
+            'What to expect in the first week at Repose'
+          ];
+        @endphp
+
+        @foreach($articles as $article)
+          <a href="#" class="block group rounded-xl border border-slate-200 bg-white overflow-hidden transition hover:shadow-xl hover:-translate-y-1">
+            <div class="h-40 bg-slate-200 relative overflow-hidden">
+                <div class="absolute inset-0 bg-green-900/10 group-hover:bg-transparent transition duration-500"></div>
+                <div class="absolute inset-0 flex items-center justify-center text-slate-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                </div>
+            </div>
+            <div class="p-6">
+              <span class="text-xs font-bold uppercase tracking-widest text-yellow-600">Recovery & Family</span>
+              <h3 class="mt-3 text-lg font-bold text-slate-900 leading-snug group-hover:text-green-700 transition">{{ $article }}</h3>
+              <div class="mt-6 flex items-center text-sm font-bold text-green-600">
+                Read Article
+                <svg class="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+        @endforeach
+      </div>
+    </div>
+  </section>
 @endsection

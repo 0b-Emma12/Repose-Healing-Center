@@ -54,7 +54,7 @@
             </h1>
 
             <p class="mt-6 max-w-xl text-lg leading-8 text-slate-200 sm:text-xl">
-                Repose Healing Center provides a supportive environment focused on rehabilitation, mental wellness and restorative care.
+                Repose Healing Center provides private, confidential rehabilitation and mental wellness care in Entebbe, Uganda — combining medically-informed treatment with compassionate, dignity-centered support for individuals and families across Uganda and the East African region.
             </p>
 
             <div class="mt-10 flex flex-wrap items-center gap-4">

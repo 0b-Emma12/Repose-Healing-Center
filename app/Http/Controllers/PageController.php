@@ -39,6 +39,16 @@ class PageController extends Controller
         return view('careers');
     }
 
+    public function schedule()
+    {
+        return view('schedule');
+    }
+
+    public function programsFees()
+    {
+        return view('programs-fees');
+    }
+
     public function showCondition($slug)
     {
         $data = config("repose.conditions.{$slug}");

@@ -1,4 +1,4 @@
-﻿<header class="sticky top-0 z-50 w-full shadow-sm" id="site-header" x-data="{ mobileMenuOpen: false }">
+<header class="sticky top-0 z-50 w-full shadow-sm" id="site-header" x-data="{ mobileMenuOpen: false }">
   <!-- Top Bar -->
   <div class="hidden border-b border-white/10 bg-slate-900 px-4 py-2 text-xs font-medium text-slate-300 sm:block">
     <div class="container-site mx-auto flex items-center justify-between">
@@ -71,6 +71,9 @@
                             {{ $data['title'] }}
                         </a>
                     @endforeach
+                    <div class="my-2 border-t border-slate-100"></div>
+                    <a href="{{ route('programs-fees') }}" class="block rounded-md px-4 py-2 text-sm font-bold text-slate-900 hover:bg-slate-50 hover:text-green-600">Programs & Fees</a>
+                    <a href="{{ route('schedule') }}" class="block rounded-md px-4 py-2 text-sm font-bold text-slate-900 hover:bg-slate-50 hover:text-green-600">Weekly Schedule</a>
                 </div>
             </div>
         </div>
@@ -114,6 +117,8 @@
         <a href="{{ route('home') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">Home</a>
         <a href="{{ route('about') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">About</a>
         <a href="{{ route('services') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">Services Overview</a>
+        <a href="{{ route('programs-fees') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">Programs & Fees</a>
+        <a href="{{ route('schedule') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">Weekly Schedule</a>
         <a href="{{ route('admissions') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">Admissions</a>
         <a href="{{ route('contact') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">Contact Us</a>
 
