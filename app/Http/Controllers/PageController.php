@@ -9,6 +9,11 @@ class PageController extends Controller
         return view('about');
     }
 
+    public function getStarted()
+    {
+        return view('get-started');
+    }
+
     public function team()
     {
         return view('team');

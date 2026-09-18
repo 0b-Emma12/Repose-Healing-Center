@@ -138,6 +138,12 @@
             'description' => 'Complete the form and our admissions team will contact you within 24 hours. All enquiries are strictly confidential.'
         ])
 
+        <div class="mt-8 rounded bg-yellow-50 p-6 border-l-4 border-yellow-500">
+          <h3 class="font-bold text-slate-900">Not sure what you need?</h3>
+          <p class="text-sm text-slate-700 mt-1 mb-4">Try our short, interactive assessment to help us prepare for your first conversation.</p>
+          <a href="{{ route('get-started') }}" class="inline-block text-sm font-bold text-green-700 hover:text-green-800 underline uppercase tracking-wider">Start Interactive Enquiry &rarr;</a>
+        </div>
+
         <div class="mt-10 space-y-4">
           @php
             $info = [
@@ -161,8 +167,8 @@
         </div>
       </div>
 
-      <div class="bg-white p-6 shadow-xl sm:p-9 lg:-mt-16 relative z-10 border border-slate-200">
-        @include('components.forms.interactive-enquiry')
+      <div class="border border-slate-200 bg-white p-6 shadow-xl sm:p-9">
+        @include('components.forms.admission-form')
       </div>
     </div>
   </section>

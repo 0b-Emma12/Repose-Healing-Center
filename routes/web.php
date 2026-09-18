@@ -26,7 +26,8 @@ Route::get('/audiences/{slug}', [PageController::class, 'showAudience'])->name('
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
-/* ---- Admissions ---- */
+/* ---- Admissions & Intake ---- */
+Route::get('/get-started', [PageController::class, 'getStarted'])->name('get-started');
 Route::get('/admissions', [AdmissionsController::class, 'index'])->name('admissions');
 Route::post('/admissions', [AdmissionsController::class, 'store'])->name('admissions.store');
 

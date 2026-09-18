@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', $data['title'] . ' | Repose Healing Center')
 
@@ -35,8 +35,8 @@
           <h3 class="font-extrabold uppercase tracking-widest text-white">Need Help?</h3>
           <div class="mt-3 mb-4 h-0.5 w-10" style="background-color: #FFD500;"></div>
           <p class="text-sm text-slate-300 leading-relaxed mb-6">Our admissions team is available to answer any questions you have, confidentially.</p>
-          <a href="{{ route('admissions') }}" class="block w-full rounded bg-yellow-500 py-3 text-center text-sm font-bold uppercase tracking-wider text-slate-900 transition hover:bg-yellow-400">
-            Contact Us
+          <a href="{{ route('get-started') }}" class="block w-full rounded bg-yellow-500 py-3 text-center text-sm font-bold uppercase tracking-wider text-slate-900 transition hover:bg-yellow-400">
+            Get Started
           </a>
           <a href="tel:+256789728211" class="mt-4 flex items-center justify-center gap-2 text-sm font-bold text-green-400 hover:text-green-300">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
