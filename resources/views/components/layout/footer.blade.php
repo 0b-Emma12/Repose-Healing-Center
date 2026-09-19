@@ -31,11 +31,8 @@
       
       <!-- Brand & About -->
       <div class="lg:col-span-1">
-        <a href="{{ route('home') }}" class="flex items-center gap-3">
-          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-green-600 text-lg font-bold text-white">
-            R
-          </div>
-          <span class="text-xl font-bold text-white">Repose Healing</span>
+        <a href="{{ route('home') }}" class="inline-block bg-white/95 p-3 rounded-xl transition hover:bg-white">
+          <img src="/images/logo.png" alt="Repose Healing Center Logo" class="h-14 w-auto object-contain">
         </a>
         <p class="mt-6 text-sm leading-relaxed text-slate-400">
           A safe, confidential and supportive environment for rehabilitation, mental wellness, advocacy and care.

@@ -18,6 +18,7 @@ Route::get('/faq', [PageController::class, 'faq'])->name('faq');
 Route::get('/careers', [PageController::class, 'careers'])->name('careers');
 Route::get('/schedule', [PageController::class, 'schedule'])->name('schedule');
 Route::get('/programs-fees', [PageController::class, 'programsFees'])->name('programs-fees');
+Route::get('/under-construction', fn() => view('under-construction'))->name('under-construction');
 
 /* ---- Dynamic Content Pages ---- */
 Route::get('/conditions/{slug}', [PageController::class, 'showCondition'])->name('conditions.show');

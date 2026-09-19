@@ -23,12 +23,8 @@
   <div class="border-b border-slate-200/80 bg-white/95 backdrop-blur">
     <div class="container-site mx-auto">
       <div class="flex min-h-[80px] items-center justify-between gap-4">
-      <a href="{{ route('home') }}" class="focus-ring flex min-w-0 items-center gap-3 rounded-lg" aria-label="Repose Healing Center home">
-        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-green-600 text-lg font-bold text-white">R</div>
-        <div class="min-w-0">
-          <div class="truncate text-base font-bold tracking-tight text-slate-800 sm:text-lg">Repose Healing Center</div>
-          <div class="hidden text-xs text-green-600 sm:block">Advocacy. Prevention. Care.</div>
-        </div>
+      <a href="{{ route('home') }}" class="focus-ring flex min-w-0 items-center gap-2 rounded-lg" aria-label="Repose Healing Center home">
+        <img src="/images/logo.png" alt="Repose Healing Center Logo" class="h-14 w-auto object-contain">
       </a>
 
       @php
