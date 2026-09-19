@@ -1,5 +1,5 @@
-﻿  <section class="section-space bg-slate-50" id="team">
-    <div class="container-site max-w-5xl" x-data="{ activeMember: null }">
+  <section class="section-space bg-slate-50" id="team">
+    <div class="container-site" x-data="{ activeMember: null }">
       
       <div class="mb-14 text-center">
         @include('components.ui.section-title', [
@@ -11,7 +11,7 @@
         ])
       </div>
 
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         
         <!-- Daniel Obote -->
         <div class="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition-all hover:shadow-xl">
