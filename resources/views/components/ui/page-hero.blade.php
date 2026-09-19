@@ -24,8 +24,4 @@
       @endif
     </div>
   </div>
-
-  @if(!isset($hideSeparator) || !$hideSeparator)
-    @include('components.ui.separator', ['color' => $separatorColor ?? 'text-white'])
-  @endif
 </div>
