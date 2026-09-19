@@ -1,4 +1,4 @@
-﻿<header class="sticky top-0 z-50 w-full shadow-sm" id="site-header" x-data="{ mobileMenuOpen: false }">
+<header class="sticky top-0 z-50 w-full shadow-sm" id="site-header" x-data="{ mobileMenuOpen: false }">
   <!-- Top Bar -->
   <div class="hidden border-b border-white/10 bg-slate-900 px-4 py-2 text-xs font-medium text-slate-300 sm:block">
     <div class="container-site mx-auto flex items-center justify-between">
@@ -112,9 +112,55 @@
       <nav class="flex flex-col gap-1 px-4" aria-label="Mobile navigation">
         <a href="{{ route('home') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">Home</a>
         <a href="{{ route('about') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">About</a>
-        <a href="{{ route('services') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">Services Overview</a>
-        <a href="{{ route('programs-fees') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">Programs & Fees</a>
-        <a href="{{ route('schedule') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">Weekly Schedule</a>
+        
+        <!-- Mobile Conditions Dropdown -->
+        <div x-data="{ open: false }">
+            <button @click="open = !open" class="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">
+                Conditions
+                <svg :class="open ? 'rotate-180' : ''" class="transition-transform duration-200 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div x-show="open" x-collapse style="display: none;">
+                <div class="flex flex-col gap-1 pl-6 pr-2 pb-2 pt-1 border-l-2 border-slate-100 ml-6 mb-2">
+                    @foreach($conditions as $slug => $data)
+                        <a href="{{ route('conditions.show', $slug) }}" class="rounded-lg px-4 py-2.5 text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-green-600">{{ $data['title'] }}</a>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Programmes Dropdown -->
+        <div x-data="{ open: false }">
+            <button @click="open = !open" class="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">
+                Programmes
+                <svg :class="open ? 'rotate-180' : ''" class="transition-transform duration-200 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div x-show="open" x-collapse style="display: none;">
+                <div class="flex flex-col gap-1 pl-6 pr-2 pb-2 pt-1 border-l-2 border-slate-100 ml-6 mb-2">
+                    @foreach($programmes as $slug => $data)
+                        <a href="{{ route('programmes.show', $slug) }}" class="rounded-lg px-4 py-2.5 text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-green-600">{{ $data['title'] }}</a>
+                    @endforeach
+                    <div class="my-1 ml-4 mr-2 border-t border-slate-100"></div>
+                    <a href="{{ route('programs-fees') }}" class="rounded-lg px-4 py-2.5 text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-green-600">Programs & Fees</a>
+                    <a href="{{ route('schedule') }}" class="rounded-lg px-4 py-2.5 text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-green-600">Weekly Schedule</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Audiences Dropdown -->
+        <div x-data="{ open: false }">
+            <button @click="open = !open" class="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">
+                Who We Help
+                <svg :class="open ? 'rotate-180' : ''" class="transition-transform duration-200 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div x-show="open" x-collapse style="display: none;">
+                <div class="flex flex-col gap-1 pl-6 pr-2 pb-2 pt-1 border-l-2 border-slate-100 ml-6 mb-2">
+                    @foreach($audiences as $slug => $data)
+                        <a href="{{ route('audiences.show', $slug) }}" class="rounded-lg px-4 py-2.5 text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-green-600">{{ $data['title'] }}</a>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+
         <a href="{{ route('admissions') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">Admissions</a>
         <a href="{{ route('contact') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">Contact Us</a>
 
