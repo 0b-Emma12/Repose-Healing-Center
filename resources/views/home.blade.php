@@ -8,7 +8,7 @@
   @include('components.sections.how-treatment-works')
   @include('components.sections.testimonials-preview')
   @include('components.sections.why-choose-us')
-  @include('components.sections.insurance-partners')
+  @include('components.sections.partners')
   @include('components.sections.faq-preview')
   @include('components.sections.cta-section')
   @include('components.sections.contact-section')
