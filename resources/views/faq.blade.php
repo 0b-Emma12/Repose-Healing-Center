@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'FAQ | Repose Healing Center')
 
@@ -30,8 +30,8 @@
             'Can family visit or be involved in treatment?' => 'Yes. We recognize the central role family plays in the recovery journey. We integrate [family education sessions / family therapy / scheduled visitation] into the treatment process.',
             'What does aftercare look like once someone leaves Repose?' => 'Before discharge, each client receives a structured aftercare and relapse-prevention plan. This typically includes [referral to outpatient counseling, community support groups, and check-in calls].',
             'What are the costs, and are payment plans available?' => 'Understanding cost should not be a barrier to reaching out. Please contact us for a confidential conversation about program fees. [Add specific details here if applicable: starting range, sliding scale, payment plans].',
-            'How can I contact Repose Healing Center?' => 'You can call +256 789 728 211 or +256 703 802 019, email reposehealingcenter@gmail.com, or use the interactive enquiry form.',
-            'Where is Repose Healing Center located?' => 'Repose Healing Center is located on Ssese View Road, Plot 2, Manyago, Entebbe, Uganda.',
+            'How can I contact Repose Healing Center?' => 'You can call +256 789 728 211 or +256 703 802 019, email info@reposehealingcenter.com, or use the interactive enquiry form.',
+            'Where is Repose Healing Center located?' => 'Repose Healing Center is located on Nkumba, Bufulu, Entebbe, Uganda.',
             'When is the center open?' => 'The center operates Monday to Saturday, from 8:00 AM to 6:00 PM.'
           ];
         @endphp
@@ -56,3 +56,4 @@
     </div>
   </section>
 @endsection
+

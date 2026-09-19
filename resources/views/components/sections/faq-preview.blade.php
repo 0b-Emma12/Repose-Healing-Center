@@ -1,4 +1,4 @@
-<section class="section-space bg-white" x-data="{ open: 0 }">
+﻿<section class="section-space bg-white" x-data="{ open: 0 }">
   <div class="container-site">
     <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
       <div>
@@ -23,7 +23,7 @@
         @php
           $faqs = [
             'How can I contact Repose Healing Center?' => 'You can contact the center by phone, email or through the contact page on this website.',
-            'Where is Repose Healing Center located?' => 'The center is located on Ssese View Road, Plot 2, Manyago, Entebbe, Uganda.',
+            'Where is Repose Healing Center located?' => 'The center is located on Nkumba, Bufulu, Entebbe, Uganda.',
             'What are your opening hours?' => 'Repose Healing Center is open Monday to Saturday, from 8:00 AM to 6:00 PM.'
           ];
         @endphp
@@ -71,3 +71,4 @@
     </div>
   </div>
 </section>
+

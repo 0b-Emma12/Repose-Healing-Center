@@ -1,4 +1,4 @@
-<div x-data="enquiryForm()" class="w-full">
+﻿<div x-data="enquiryForm()" class="w-full">
     <!-- Intro Step -->
     <div x-show="step === -1" x-transition.opacity>
         <div class="mb-4 font-black tracking-widest text-[#FFD500] uppercase text-xs">Confidential enquiry</div>
@@ -136,7 +136,7 @@
             <a :href="mailUrl" class="flex flex-col items-center justify-center gap-2 p-6 rounded-xl bg-white border-2 border-slate-200 text-slate-800 hover:border-green-600 transition text-center shadow-sm sm:col-span-2 lg:col-span-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-600"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                 <span class="font-bold">Email us</span>
-                <span class="text-xs text-slate-500">reposehealingcenter@gmail.com</span>
+                <span class="text-xs text-slate-500">info@reposehealingcenter.com</span>
             </a>
         </div>
 
@@ -189,8 +189,9 @@
                 return 'https://wa.me/256789728211?text=' + encodeURIComponent(this.buildMessage());
             },
             get mailUrl() {
-                return 'mailto:reposehealingcenter@gmail.com?subject=' + encodeURIComponent('New enquiry from website - ' + this.answers.name) + '&body=' + encodeURIComponent(this.buildMessage());
+                return 'mailto:info@reposehealingcenter.com?subject=' + encodeURIComponent('New enquiry from website - ' + this.answers.name) + '&body=' + encodeURIComponent(this.buildMessage());
             }
         }));
     });
 </script>
+

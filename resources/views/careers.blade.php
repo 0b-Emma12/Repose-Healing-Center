@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('title', 'Careers | Repose Healing Center')
 
@@ -54,9 +54,10 @@
 
       <div class="mx-auto mt-12 max-w-3xl border-l-4 border-green-600 bg-slate-50 p-7">
         <p class="leading-8 text-slate-700">
-          To enquire about opportunities, contact Repose Healing Center using <strong>reposehealingcenter@gmail.com</strong>.
+          To enquire about opportunities, contact Repose Healing Center using <strong>info@reposehealingcenter.com</strong>.
         </p>
       </div>
     </div>
   </section>
 @endsection
+
