@@ -1,6 +1,9 @@
-﻿<div x-data="enquiryForm()" class="w-full">
+<div x-data="enquiryForm()" class="w-full">
     <!-- Intro Step -->
-    <div x-show="step === -1" x-transition.opacity>
+    <div x-show="step === -1" 
+         x-transition:enter="transition ease-out duration-500"
+         x-transition:enter-start="opacity-0 translate-y-4"
+         x-transition:enter-end="opacity-100 translate-y-0">
         <div class="mb-4 font-black tracking-widest text-[#FFD500] uppercase text-xs">Confidential enquiry</div>
         <h2 class="text-3xl font-extrabold text-slate-900 mb-4 uppercase tracking-wide">Let's find the right first step</h2>
         <div class="h-0.5 w-12 bg-[#FFD500] mb-6"></div>
@@ -27,7 +30,11 @@
 
     <!-- Questions -->
     <template x-for="(q, index) in questions" :key="index">
-        <div x-show="step === index" x-transition.opacity style="display: none;">
+        <div x-show="step === index" 
+             x-transition:enter="transition ease-out duration-500"
+             x-transition:enter-start="opacity-0 translate-y-4"
+             x-transition:enter-end="opacity-100 translate-y-0"
+             style="display: none;">
             
             <div class="flex items-center justify-between mb-6">
                 <div class="flex-1 h-1.5 bg-slate-100 rounded-full overflow-hidden mr-4">
@@ -100,7 +107,11 @@
     </template>
 
     <!-- Review / Submission Step -->
-    <div x-show="step === totalSteps" x-transition.opacity style="display: none;">
+    <div x-show="step === totalSteps" 
+         x-transition:enter="transition ease-out duration-500"
+         x-transition:enter-start="opacity-0 translate-y-4"
+         x-transition:enter-end="opacity-100 translate-y-0"
+         style="display: none;">
         <button @click="back()" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-slate-700 mb-6 transition">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
             Back
