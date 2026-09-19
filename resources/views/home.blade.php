@@ -3,6 +3,7 @@
 @section('content')
   @include('components.sections.hero')
   @include('components.sections.credential-strip')
+  @include('components.sections.intro')
   @include('components.sections.services-preview')
   @include('components.sections.how-treatment-works')
   @include('components.sections.testimonials-preview')

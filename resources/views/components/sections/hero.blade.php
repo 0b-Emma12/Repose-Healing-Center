@@ -53,9 +53,7 @@
                 <span class="text-yellow-500">Care.</span>
             </h1>
 
-            <p class="mt-6 max-w-xl text-lg leading-8 text-slate-200 sm:text-xl">
-                Repose Healing Center provides private, confidential rehabilitation and mental wellness care in Entebbe, Uganda — combining medically-informed treatment with compassionate, dignity-centered support for individuals and families across Uganda and the East African region.
-            </p>
+
 
             <div class="mt-10 flex flex-wrap items-center gap-4">
                 <a href="{{ route('get-started') }}" class="focus-ring inline-flex items-center gap-2 rounded bg-yellow-500 px-8 py-4 text-[15px] font-bold uppercase tracking-widest text-slate-900 transition hover:bg-yellow-400 hover:-translate-y-1">
