@@ -23,7 +23,7 @@
         @php
           $faqs = [
             'How can I contact Repose Healing Center?' => 'You can contact the center by phone, email or through the contact page on this website.',
-            'Where is Repose Healing Center located?' => 'The center is located on Nkumba, Bufulu, Entebbe, Uganda.',
+            'Where is Repose Healing Center located?' => 'The center is located on Nkumba Bufulu, Entebbe, Uganda.',
             'What are your opening hours?' => 'Repose Healing Center is open Monday to Saturday, from 8:00 AM to 6:00 PM.'
           ];
         @endphp
@@ -71,4 +71,5 @@
     </div>
   </div>
 </section>
+
 
