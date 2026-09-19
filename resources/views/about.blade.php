@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('title', 'About Us | Repose Healing Center')
 
@@ -31,16 +31,13 @@
 
         <div class="mt-8 space-y-5 leading-8 text-slate-600">
           <p>
-            Our approach is centered on creating a safe and confidential
-            environment where individuals can seek support and work toward
-            positive change.
+            At Repose Healing Center, we combine professional expertise with empathy and respect to support individuals and families affected by addiction and mental health challenges. 
           </p>
           <p>
-            We believe that healing is strengthened by compassion,
-            professional support, respect and appropriate guidance.
+            Through prevention, community engagement, and personalized care, we promote healing, restore dignity, and build lasting recovery.
           </p>
           <p class="font-semibold text-slate-800">
-            Advocacy. Prevention. Care. Restoring Lives.
+            Our Purpose: To restore lives, strengthen communities, and create pathways to lasting recovery.
           </p>
         </div>
 
