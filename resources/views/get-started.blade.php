@@ -7,7 +7,8 @@
       'eyebrow' => 'CONFIDENTIAL ENQUIRY',
       'title' => 'Start Your',
       'accent' => 'Enquiry',
-      'description' => 'Complete this brief assessment to help our admissions team understand your situation before your first conversation.'
+      'description' => 'Complete this brief assessment to help our admissions team understand your situation before your first conversation.',
+      'hideSeparator' => true
   ])
 
   <section class="section-space bg-slate-50 relative">

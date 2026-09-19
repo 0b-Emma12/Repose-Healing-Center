@@ -89,4 +89,6 @@
             </button>
         </div>
     </div>
+
+    @include('components.ui.separator', ['color' => 'text-slate-900'])
 </section>

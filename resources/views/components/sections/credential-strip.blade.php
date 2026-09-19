@@ -1,4 +1,4 @@
-<div class="bg-slate-900 border-t border-slate-800 border-b border-slate-800">
+<div class="relative bg-slate-900 border-t border-slate-800 border-b border-slate-800 pb-16">
   <div class="container-site">
     <div class="py-6 flex flex-wrap justify-center gap-x-12 gap-y-6 text-sm text-slate-400 font-semibold tracking-wide uppercase text-center">
       
@@ -24,4 +24,6 @@
 
     </div>
   </div>
+
+  @include('components.ui.separator', ['color' => 'text-slate-50'])
 </div>

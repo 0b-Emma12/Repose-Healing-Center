@@ -7,7 +7,8 @@
       'eyebrow' => 'LEADERSHIP & STAFF',
       'title' => 'Our',
       'accent' => 'Team',
-      'description' => 'Meet the dedicated professionals committed to guiding you toward healing, resilience, and recovery.'
+      'description' => 'Meet the dedicated professionals committed to guiding you toward healing, resilience, and recovery.',
+      'separatorColor' => 'text-slate-50'
   ])
 
   @include('components.sections.team-grid')  
