@@ -108,19 +108,19 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div x-show="mobileMenuOpen" x-collapse class="border-t border-slate-100 py-4 lg:hidden" style="display: none;">
-      <nav class="flex flex-col gap-1 px-4" aria-label="Mobile navigation">
+    <div x-show="mobileMenuOpen" x-collapse class="absolute left-0 top-full w-full border-b border-slate-200 bg-white shadow-xl lg:hidden" style="display: none;">
+      <nav x-data="{ activeDropdown: null }" class="flex max-h-[80vh] flex-col gap-1 overflow-y-auto px-4 py-4" aria-label="Mobile navigation">
         <a href="{{ route('home') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">Home</a>
         <a href="{{ route('about') }}" class="rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">About</a>
         
         <!-- Mobile Conditions Dropdown -->
-        <div x-data="{ open: false }">
-            <button @click="open = !open" class="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">
+        <div>
+            <button @click="activeDropdown = (activeDropdown === 'conditions' ? null : 'conditions')" class="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">
                 Conditions
-                <svg :class="open ? 'rotate-180' : ''" class="transition-transform duration-200 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                <svg :class="activeDropdown === 'conditions' ? 'rotate-180' : ''" class="transition-transform duration-200 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
             </button>
-            <div x-show="open" x-collapse style="display: none;">
-                <div class="flex flex-col gap-1 pl-6 pr-2 pb-2 pt-1 border-l-2 border-slate-100 ml-6 mb-2">
+            <div x-show="activeDropdown === 'conditions'" x-collapse style="display: none;">
+                <div class="mb-2 ml-6 flex flex-col gap-1 border-l-2 border-slate-100 pb-2 pl-6 pr-2 pt-1">
                     @foreach($conditions as $slug => $data)
                         <a href="{{ route('conditions.show', $slug) }}" class="rounded-lg px-4 py-2.5 text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-green-600">{{ $data['title'] }}</a>
                     @endforeach
@@ -129,17 +129,17 @@
         </div>
 
         <!-- Mobile Programmes Dropdown -->
-        <div x-data="{ open: false }">
-            <button @click="open = !open" class="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">
+        <div>
+            <button @click="activeDropdown = (activeDropdown === 'programmes' ? null : 'programmes')" class="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">
                 Programmes
-                <svg :class="open ? 'rotate-180' : ''" class="transition-transform duration-200 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                <svg :class="activeDropdown === 'programmes' ? 'rotate-180' : ''" class="transition-transform duration-200 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
             </button>
-            <div x-show="open" x-collapse style="display: none;">
-                <div class="flex flex-col gap-1 pl-6 pr-2 pb-2 pt-1 border-l-2 border-slate-100 ml-6 mb-2">
+            <div x-show="activeDropdown === 'programmes'" x-collapse style="display: none;">
+                <div class="mb-2 ml-6 flex flex-col gap-1 border-l-2 border-slate-100 pb-2 pl-6 pr-2 pt-1">
                     @foreach($programmes as $slug => $data)
                         <a href="{{ route('programmes.show', $slug) }}" class="rounded-lg px-4 py-2.5 text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-green-600">{{ $data['title'] }}</a>
                     @endforeach
-                    <div class="my-1 ml-4 mr-2 border-t border-slate-100"></div>
+                    <div class="ml-4 mr-2 my-1 border-t border-slate-100"></div>
                     <a href="{{ route('programs-fees') }}" class="rounded-lg px-4 py-2.5 text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-green-600">Programs & Fees</a>
                     <a href="{{ route('schedule') }}" class="rounded-lg px-4 py-2.5 text-sm font-bold text-slate-700 hover:bg-slate-50 hover:text-green-600">Weekly Schedule</a>
                 </div>
@@ -147,13 +147,13 @@
         </div>
 
         <!-- Mobile Audiences Dropdown -->
-        <div x-data="{ open: false }">
-            <button @click="open = !open" class="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">
+        <div>
+            <button @click="activeDropdown = (activeDropdown === 'audiences' ? null : 'audiences')" class="flex w-full items-center justify-between rounded-xl px-4 py-3 text-sm font-bold text-slate-700 hover:bg-slate-50">
                 Who We Help
-                <svg :class="open ? 'rotate-180' : ''" class="transition-transform duration-200 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                <svg :class="activeDropdown === 'audiences' ? 'rotate-180' : ''" class="transition-transform duration-200 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
             </button>
-            <div x-show="open" x-collapse style="display: none;">
-                <div class="flex flex-col gap-1 pl-6 pr-2 pb-2 pt-1 border-l-2 border-slate-100 ml-6 mb-2">
+            <div x-show="activeDropdown === 'audiences'" x-collapse style="display: none;">
+                <div class="mb-2 ml-6 flex flex-col gap-1 border-l-2 border-slate-100 pb-2 pl-6 pr-2 pt-1">
                     @foreach($audiences as $slug => $data)
                         <a href="{{ route('audiences.show', $slug) }}" class="rounded-lg px-4 py-2.5 text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-green-600">{{ $data['title'] }}</a>
                     @endforeach
