@@ -173,19 +173,5 @@
     </div>
   </section>
 
-  <!-- Meet Our Team Banner -->
-  <section class="bg-green-600 text-center px-6 py-20 lg:py-24">
-    <div class="mx-auto max-w-3xl">
-      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Meet Our Team</h2>
-      <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-green-50">
-        Our dedicated professionals are committed to guiding you toward healing, resilience, and recovery.
-      </p>
-      <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="{{ route('team') }}" class="inline-flex items-center gap-2 rounded bg-yellow-500 px-8 py-4 text-[15px] font-bold uppercase tracking-widest text-slate-900 transition hover:bg-yellow-400">
-          View Staff Profiles
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
+  @include('components.sections.team-grid')
 @endsection
